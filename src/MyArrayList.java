@@ -37,7 +37,7 @@ public class MyArrayList<T> implements MyList<T> {
     }
 
 
-    public void addList(int[] array3) {
+    public void addList(int[] array3) { ////////////////////////////////////////////////////////add all
         int sizee = array3.length;
         System.out.println(sizee);
         increaseBuffer(sizee);
