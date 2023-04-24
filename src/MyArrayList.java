@@ -2,11 +2,17 @@ import java.util.Arrays;
 
 public class MyArrayList<T> implements MyList<T> {
     private Object[] elements;
-    private int size;
+    private int size = 0;
+    private int capacity = 0;
+    private int[] array;
+
 
     public MyArrayList() {
-        this.elements = new Object[10];
-        this.size = 0;
+        array = new int[capacity];
+    }
+
+    public int gett(int index) {
+        return array[index];
     }
 
     public int size() {
@@ -22,14 +28,34 @@ public class MyArrayList<T> implements MyList<T> {
         return false;
     }
 
-    public void add(T item) {
-        if (this.size == this.elements.length) {
-            Object[] newElements = new Object[this.elements.length * 2];
-            System.arraycopy(this.elements, 0, newElements, 0, this.elements.length);
-            this.elements = newElements;
+
+    public void add(T Newitem) {
+        if (size == capacity) {
+            increaseBuffer(1);
         }
-        this.elements[this.size] = item;
-        this.size++;
+        array[size++] = (int) Newitem;
+    }
+
+
+    public void addList(int[] array3) {
+        int sizee = array3.length;
+        System.out.println(sizee);
+        increaseBuffer(sizee);
+
+        for (int i = 0; i<sizee; i++) {
+            array[size+i-1] = array3[i];
+        }
+
+
+    }
+
+    public void increaseBuffer(int numb) {
+        capacity  = capacity + numb;
+        int[] array2 = new int[capacity];
+        for (int i = 0; i<size; i++) {
+            array2[i] = array[i];
+        }
+        array = array2;
     }
 
     public void add(T item, int index) {
@@ -45,6 +71,7 @@ public class MyArrayList<T> implements MyList<T> {
         elements[index] = item;
         size++;
     }
+
 
 
     public boolean remove(T item) {
@@ -75,8 +102,8 @@ public class MyArrayList<T> implements MyList<T> {
         size = 0;
     }
 
-    public T get(int index) {
-        return (T) this.elements[index];
+    public int get(int index) {
+        return array[index];
     }
 
     public int indexOf(Object o) {

@@ -1,5 +1,3 @@
-import java.util.Objects;
-
 public class MyLinkedList<E> implements MyList<E> {
     private class Node {
         E element;
@@ -49,7 +47,7 @@ public class MyLinkedList<E> implements MyList<E> {
 
     public void clear() {
     }
-    public E get(int index) {
+    public int get(int index) {
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException();
         }
@@ -65,7 +63,8 @@ public class MyLinkedList<E> implements MyList<E> {
                 currentNode = currentNode.prev;
             }
         }
-        return currentNode.element;
+        //return currentNode.element;
+        return index;
     }
 
     public int indexOf(Object o) {
