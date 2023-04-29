@@ -13,7 +13,7 @@ public class MyArrayListStack {
 
     public static void pop() {
         int size = stack.size();
-        stack.remove(size);
+        stack.remove(size-1);
     }
 
     public static int sizee() {
