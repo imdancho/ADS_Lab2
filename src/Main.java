@@ -1,16 +1,16 @@
 public class Main {
     public static void main(String[] args) {
 
+        MyArrayListStack.push(95);
+        MyArrayListStack.push(95);
+        MyArrayListStack.push(95);
+        MyArrayListStack.push(95);
+        System.out.println(MyArrayListStack.sizee());
 
+        MyArrayListStack.pop();
+        MyArrayListStack.pop();
 
-
-
-
-
-
-
-
-
+        System.out.println(MyArrayListStack.sizee());
 
 
 
