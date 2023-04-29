@@ -1,10 +1,12 @@
 public class Main {
     public static void main(String[] args) {
 
-        MyArrayListStack.push(95);
-        MyArrayListStack.push(95);
-        MyArrayListStack.push(95);
-        MyArrayListStack.push(95);
+
+        MyArrayListStack.push(1);
+        MyArrayListStack.push(2);
+        MyArrayListStack.push(3);
+        MyArrayListStack.push(4);
+        MyArrayListStack.push(6);
         System.out.println(MyArrayListStack.sizee());
 
         System.out.println(MyArrayListStack.peek());
@@ -12,6 +14,8 @@ public class Main {
         MyArrayListStack.pop();
 
         System.out.println(MyArrayListStack.sizee());
+        System.out.println(MyArrayListStack.peek());
+
 
 
 
