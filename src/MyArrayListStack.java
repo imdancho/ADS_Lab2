@@ -12,13 +12,26 @@ public class MyArrayListStack {
     }
 
     public static void pop() {
-        int size = stack.size();
-        stack.remove(size-1);
+        try {
+            int size = stack.size();
+            if ((size-1)>=0) stack.remove(size-1);
+
+        } catch (EmptyStackException e) {
+            System.out.println("Stack is empty!");
+        }
     }
 
     public static Object peek() {
-        int size = stack.size();
-        return stack.get(size-1);
+        try {
+            int size = stack.size();
+            if ((size-1)>=0) {
+                return stack.get(size-1);
+            }
+        } catch (EmptyStackException e) {
+            System.out.println("Stack is empty!");
+        }
+
+        return null;
     }
 
     public static Boolean isEmpty() {
@@ -30,8 +43,5 @@ public class MyArrayListStack {
     public static int sizee() {
         return stack.size();
     }
-
-
-
 
 }

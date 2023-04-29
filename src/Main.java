@@ -13,8 +13,16 @@ public class Main {
         System.out.println(MyArrayListStack.peek());
 
         MyArrayListStack.pop();
+        MyArrayListStack.pop();
+        MyArrayListStack.pop();
+        MyArrayListStack.pop();
+        MyArrayListStack.pop();
+        MyArrayListStack.pop();
 
         System.out.println(MyArrayListStack.sizee());
+        System.out.println(MyArrayListStack.peek());
+        System.out.println(MyArrayListStack.peek());
+        System.out.println(MyArrayListStack.peek());
         System.out.println(MyArrayListStack.peek());
 
         System.out.println(MyArrayListStack.isEmpty());
