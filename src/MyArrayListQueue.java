@@ -7,4 +7,7 @@ public class MyArrayListQueue {
     public MyArrayListQueue() {
     }
 
+    public static void enqueue(Object o) {
+        stack.add(o);
+    }
 }
