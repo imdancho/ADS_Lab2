@@ -1,28 +1,42 @@
 public class Main {
     public static void main(String[] args) {
 
-        MyArrayList<Integer> myAList = new MyArrayList<Integer>();
-        myAList.add(2);
-        myAList.add(3);
-        myAList.add(5);
-        myAList.add(9);
-        myAList.add(8);
-        System.out.println("Size of list: " + myAList.size());
 
-        System.out.println("Elements:");
-        for (int i = 0; i < myAList.size(); i++) {
-            System.out.print(myAList.get(i) + " ");
 
-        }
-        int[] array3 = {5, 9, 8, 8};
-        myAList.addList(array3);
 
-        System.out.println("Elements:");
-        for (int i = 0; i < myAList.size(); i++) {
-            System.out.print(myAList.get(i) + " ");
-        }
 
-        System.out.println("Size of list: " + myAList.size());
+
+
+
+
+
+
+
+
+
+
+//        MyArrayList<Integer> myAList = new MyArrayList<Integer>();
+//        myAList.add(2);
+//        myAList.add(3);
+//        myAList.add(5);
+//        myAList.add(9);
+//        myAList.add(8);
+//        System.out.println("Size of list: " + myAList.size());
+//
+//        System.out.println("Elements:");
+//        for (int i = 0; i < myAList.size(); i++) {
+//            System.out.print(myAList.get(i) + " ");
+//
+//        }
+//        int[] array3 = {5, 9, 8, 8};
+//        myAList.addList(array3);
+//
+//        System.out.println("Elements:");
+//        for (int i = 0; i < myAList.size(); i++) {
+//            System.out.print(myAList.get(i) + " ");
+//        }
+//
+//        System.out.println("Size of list: " + myAList.size());
 
 
         //System.out.println("Size of list: " + myAList.size());
