@@ -10,4 +10,8 @@ public class MyArrayListQueue {
     public static void enqueue(Object o) {
         stack.add(o);
     }
+
+    public static void dequeue(Object o) {
+        stack.remove(0);
+    }
 }
