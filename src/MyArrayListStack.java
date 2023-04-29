@@ -21,6 +21,11 @@ public class MyArrayListStack {
         return stack.get(size-1);
     }
 
+    public static Boolean isEmpty() {
+        int size = stack.size();
+        if (size==0) return true;
+        else return false;
+    }
 
     public static int sizee() {
         return stack.size();

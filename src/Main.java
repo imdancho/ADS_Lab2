@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
+        System.out.println(MyArrayListStack.isEmpty());
 
         MyArrayListStack.push(1);
         MyArrayListStack.push(2);
@@ -16,6 +17,7 @@ public class Main {
         System.out.println(MyArrayListStack.sizee());
         System.out.println(MyArrayListStack.peek());
 
+        System.out.println(MyArrayListStack.isEmpty());
 
 
 
