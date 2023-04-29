@@ -16,6 +16,12 @@ public class MyArrayListStack {
         stack.remove(size-1);
     }
 
+    public static Object peek() {
+        int size = stack.size();
+        return stack.get(size-1);
+    }
+
+
     public static int sizee() {
         return stack.size();
     }

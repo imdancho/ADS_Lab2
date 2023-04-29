@@ -7,7 +7,8 @@ public class Main {
         MyArrayListStack.push(95);
         System.out.println(MyArrayListStack.sizee());
 
-        MyArrayListStack.pop();
+        System.out.println(MyArrayListStack.peek());
+
         MyArrayListStack.pop();
 
         System.out.println(MyArrayListStack.sizee());
