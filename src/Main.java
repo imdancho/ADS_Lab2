@@ -1,31 +1,50 @@
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println(MyArrayListStack.isEmpty());
+        MyArrayListQueue.enqueue(1);
+        MyArrayListQueue.enqueue(2);
+        MyArrayListQueue.enqueue(3);
+        MyArrayListQueue.enqueue(4);
 
-        MyArrayListStack.push(1);
-        MyArrayListStack.push(2);
-        MyArrayListStack.push(3);
-        MyArrayListStack.push(4);
-        MyArrayListStack.push(6);
-        System.out.println(MyArrayListStack.sizee());
+        System.out.println(MyArrayListQueue.dequeue());
+        System.out.println(MyArrayListQueue.dequeue());
+        System.out.println(MyArrayListQueue.dequeue());
+        System.out.println(MyArrayListQueue.dequeue());
 
-        System.out.println(MyArrayListStack.peek());
 
-        MyArrayListStack.pop();
-        MyArrayListStack.pop();
-        MyArrayListStack.pop();
-        MyArrayListStack.pop();
-        MyArrayListStack.pop();
-        MyArrayListStack.pop();
 
-        System.out.println(MyArrayListStack.sizee());
-        System.out.println(MyArrayListStack.peek());
-        System.out.println(MyArrayListStack.peek());
-        System.out.println(MyArrayListStack.peek());
-        System.out.println(MyArrayListStack.peek());
 
-        System.out.println(MyArrayListStack.isEmpty());
+
+
+
+
+
+
+//        System.out.println(MyArrayListStack.isEmpty());
+//
+//        MyArrayListStack.push(1);
+//        MyArrayListStack.push(2);
+//        MyArrayListStack.push(3);
+//        MyArrayListStack.push(4);
+//        MyArrayListStack.push(6);
+//        System.out.println(MyArrayListStack.sizee());
+//
+//        System.out.println(MyArrayListStack.peek());
+//
+//        MyArrayListStack.pop();
+//        MyArrayListStack.pop();
+//        MyArrayListStack.pop();
+//        MyArrayListStack.pop();
+//        MyArrayListStack.pop();
+//        MyArrayListStack.pop();
+//
+//        System.out.println(MyArrayListStack.sizee());
+//        System.out.println(MyArrayListStack.peek());
+//        System.out.println(MyArrayListStack.peek());
+//        System.out.println(MyArrayListStack.peek());
+//        System.out.println(MyArrayListStack.peek());
+//
+//        System.out.println(MyArrayListStack.isEmpty());
 
 
 
