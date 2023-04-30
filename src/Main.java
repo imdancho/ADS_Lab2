@@ -6,10 +6,17 @@ public class Main {
         MyArrayListQueue.enqueue(3);
         MyArrayListQueue.enqueue(4);
 
+        System.out.println(MyArrayListQueue.peek());
         System.out.println(MyArrayListQueue.dequeue());
+
         System.out.println(MyArrayListQueue.dequeue());
+
+        System.out.println(MyArrayListQueue.peek());
         System.out.println(MyArrayListQueue.dequeue());
+
         System.out.println(MyArrayListQueue.dequeue());
+
+
 
 
 

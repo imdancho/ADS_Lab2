@@ -16,4 +16,10 @@ public class MyArrayListQueue {
         queue.remove(0);
         return element;
     }
+
+    public static Object peek() {
+        Object element = queue.get(0);
+        return element;
+    }
+
 }
