@@ -17,6 +17,7 @@ public class MyArrayListStack {
             int size = stack.size();
             if ((size-1)>=0) {
                 element = stack.remove(size-1);
+
             }
 
         } catch (EmptyStackException e) {

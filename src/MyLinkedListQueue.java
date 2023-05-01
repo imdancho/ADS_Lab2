@@ -21,7 +21,7 @@ public class MyLinkedListQueue {
             }
 
         } catch (EmptyStackException e) {
-            System.out.println("Stack is empty!");
+            System.out.println("Queue is empty!");
         }
         return element;
     }
@@ -35,7 +35,7 @@ public class MyLinkedListQueue {
             }
 
         } catch (EmptyStackException e) {
-            System.out.println("Stack is empty!");
+            System.out.println("Queue is empty!");
         }
         return element;
     }
