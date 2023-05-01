@@ -1,3 +1,4 @@
+import java.util.EmptyStackException;
 import java.util.ArrayList;
 
 public class MyArrayListQueue {
@@ -11,13 +12,31 @@ public class MyArrayListQueue {
     }
 
     public static Object dequeue() {
-        Object element = queue.get(0);
-        queue.remove(0);
+        Object element = null;
+        try {
+            int size = queue.size();
+            if ((size)>0) {
+                element = queue.get(0);
+                queue.remove(0);
+            }
+
+        } catch (EmptyStackException e) {
+            System.out.println("Stack is empty!");
+        }
         return element;
     }
 
     public static Object peek() {
-        Object element = queue.get(0);
+        Object element = null;
+        try {
+            int size = queue.size();
+            if ((size)>0) {
+                element = queue.get(0);
+            }
+
+        } catch (EmptyStackException e) {
+            System.out.println("Stack is empty!");
+        }
         return element;
     }
 
