@@ -1,4 +1,3 @@
-import java.util.EmptyStackException;
 import java.util.ArrayList;
 
 public class MyArrayListQueue {
@@ -28,7 +27,7 @@ public class MyArrayListQueue {
         else return false;
     }
 
-    public static int sizee() {
+    public static int size() {
         return queue.size();
     }
 }

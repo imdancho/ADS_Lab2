@@ -19,6 +19,7 @@ public class Main {
         System.out.println(MyLinkedListStack.pop());
 
         System.out.println(MyLinkedListStack.isEmpty());
+        System.out.println(MyLinkedListStack.size());
 
 
 

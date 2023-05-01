@@ -45,4 +45,8 @@ public class MyLinkedListStack {
         if (size==0) return true;
         else return false;
     }
+
+    public static int size() {
+        return stack.size();
+    }
 }
