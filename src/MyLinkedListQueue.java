@@ -7,7 +7,22 @@ public class MyLinkedListQueue {
     public MyLinkedListQueue() {
     }
 
-    public static void push(Object o) {
+    public static void enqueue(Object o) {
         queue.addLast(o);
+    }
+
+    public static Object dequeue () {
+        Object element = null;
+        try {
+            int size = queue.size();
+            if ((size)>0) {
+                element = queue.get(0);
+                queue.removeFirst();
+            }
+
+        } catch (EmptyStackException e) {
+            System.out.println("Stack is empty!");
+        }
+        return element;
     }
 }

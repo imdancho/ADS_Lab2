@@ -1,9 +1,14 @@
 public class Main {
     public static void main(String[] args) {
 
-        MyLinkedListQueue.push(11);
-        MyLinkedListQueue.push(22);
-        MyLinkedListQueue.push(33);
+        MyLinkedListQueue.enqueue (11);
+        MyLinkedListQueue.enqueue (22);
+        MyLinkedListQueue.enqueue (33);
+        System.out.println(MyLinkedListQueue.dequeue());
+        System.out.println(MyLinkedListQueue.dequeue());
+        System.out.println(MyLinkedListQueue.dequeue());
+
+
 
 
 /////////////////////////////
