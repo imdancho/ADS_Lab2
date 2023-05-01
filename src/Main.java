@@ -14,7 +14,7 @@ public class Main {
         System.out.println(MyArrayListQueue.peek());
         System.out.println(MyArrayListQueue.dequeue());
 
-        System.out.println(MyArrayListQueue.dequeue());
+        System.out.println(MyArrayListQueue.isEmpty());
 
 
 
