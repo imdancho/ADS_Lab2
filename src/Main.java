@@ -1,31 +1,31 @@
 public class Main {
     public static void main(String[] args) {
 
-        MyLinkedListStack.push(11);
-        MyLinkedListStack.push(22);
-        MyLinkedListStack.push(33);
-
-        System.out.println(MyLinkedListStack.peek());
-        System.out.println(MyLinkedListStack.pop());
-        System.out.println(MyLinkedListStack.isEmpty());
-
-        System.out.println(MyLinkedListStack.peek());
-        System.out.println(MyLinkedListStack.pop());
-
-        System.out.println(MyLinkedListStack.peek());
-        System.out.println(MyLinkedListStack.pop());
-
-        System.out.println(MyLinkedListStack.peek());
-        System.out.println(MyLinkedListStack.pop());
-
-        System.out.println(MyLinkedListStack.isEmpty());
-        System.out.println(MyLinkedListStack.size());
+        MyLinkedListQueue.push(11);
+        MyLinkedListQueue.push(22);
+        MyLinkedListQueue.push(33);
 
 
-
-
-
-
+/////////////////////////////
+//        MyLinkedListStack.push(11);
+//        MyLinkedListStack.push(22);
+//        MyLinkedListStack.push(33);
+//
+//        System.out.println(MyLinkedListStack.peek());
+//        System.out.println(MyLinkedListStack.pop());
+//        System.out.println(MyLinkedListStack.isEmpty());
+//
+//        System.out.println(MyLinkedListStack.peek());
+//        System.out.println(MyLinkedListStack.pop());
+//
+//        System.out.println(MyLinkedListStack.peek());
+//        System.out.println(MyLinkedListStack.pop());
+//
+//        System.out.println(MyLinkedListStack.peek());
+//        System.out.println(MyLinkedListStack.pop());
+//
+//        System.out.println(MyLinkedListStack.isEmpty());
+//        System.out.println(MyLinkedListStack.size());
 
 /////////////////////////////
 //        MyArrayListQueue.enqueue(1);
