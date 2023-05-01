@@ -26,4 +26,17 @@ public class MyLinkedListStack {
         return element;
     }
 
+    public static Object peek() {
+        Object element = null;
+        try {
+            int size = stack.size();
+            if ((size)>0) {
+                element = stack.get(0);
+            }
+
+        } catch (EmptyStackException e) {
+            System.out.println("Stack is empty!");
+        }
+        return element;
+    }
 }

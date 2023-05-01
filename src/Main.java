@@ -5,9 +5,16 @@ public class Main {
         MyLinkedListStack.push(22);
         MyLinkedListStack.push(33);
 
+        System.out.println(MyLinkedListStack.peek());
         System.out.println(MyLinkedListStack.pop());
+
+        System.out.println(MyLinkedListStack.peek());
         System.out.println(MyLinkedListStack.pop());
+
+        System.out.println(MyLinkedListStack.peek());
         System.out.println(MyLinkedListStack.pop());
+
+        System.out.println(MyLinkedListStack.peek());
         System.out.println(MyLinkedListStack.pop());
 
 
