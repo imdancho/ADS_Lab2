@@ -39,4 +39,10 @@ public class MyLinkedListStack {
         }
         return element;
     }
+
+    public static Boolean isEmpty() {
+        int size = stack.size();
+        if (size==0) return true;
+        else return false;
+    }
 }

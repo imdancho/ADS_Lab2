@@ -7,6 +7,7 @@ public class Main {
 
         System.out.println(MyLinkedListStack.peek());
         System.out.println(MyLinkedListStack.pop());
+        System.out.println(MyLinkedListStack.isEmpty());
 
         System.out.println(MyLinkedListStack.peek());
         System.out.println(MyLinkedListStack.pop());
@@ -17,6 +18,7 @@ public class Main {
         System.out.println(MyLinkedListStack.peek());
         System.out.println(MyLinkedListStack.pop());
 
+        System.out.println(MyLinkedListStack.isEmpty());
 
 
 
