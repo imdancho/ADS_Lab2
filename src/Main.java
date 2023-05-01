@@ -1,15 +1,42 @@
 public class Main {
     public static void main(String[] args) {
 
+        MyArrayListStack.push(11);
+        MyArrayListStack.push(22);
+        MyArrayListStack.push(33);
+
+        System.out.println(MyArrayListStack.peek());
+        System.out.println(MyArrayListStack.isEmpty());
+        System.out.println(MyArrayListStack.pop());
+        System.out.println(MyArrayListStack.size());
+
+
+        System.out.println(MyArrayListStack.peek());
+        System.out.println(MyArrayListStack.pop());
+
+        System.out.println(MyArrayListStack.pop());
+        System.out.println(MyArrayListStack.isEmpty());
+        System.out.println(MyArrayListStack.size());
+
+        System.out.println();
+
+
         MyLinkedListQueue.enqueue (11);
         MyLinkedListQueue.enqueue (22);
         MyLinkedListQueue.enqueue (33);
+
+        System.out.println(MyLinkedListQueue.peek());
+        System.out.println(MyLinkedListQueue.isEmpty());
         System.out.println(MyLinkedListQueue.dequeue());
-        System.out.println(MyLinkedListQueue.dequeue());
-        System.out.println(MyLinkedListQueue.dequeue());
+        System.out.println(MyLinkedListQueue.size());
 
 
+        System.out.println(MyLinkedListQueue.peek());
+        System.out.println(MyLinkedListQueue.dequeue());
 
+        System.out.println(MyLinkedListQueue.dequeue());
+        System.out.println(MyLinkedListQueue.isEmpty());
+        System.out.println(MyLinkedListQueue.size());
 
 /////////////////////////////
 //        MyLinkedListStack.push(11);

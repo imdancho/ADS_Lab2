@@ -31,7 +31,7 @@ public class MyLinkedListStack {
         try {
             int size = stack.size();
             if ((size)>0) {
-                element = stack.get(0);
+                element = stack.getFirst();
             }
 
         } catch (EmptyStackException e) {
@@ -41,9 +41,7 @@ public class MyLinkedListStack {
     }
 
     public static Boolean isEmpty() {
-        int size = stack.size();
-        if (size==0) return true;
-        else return false;
+        return stack.isEmpty();
     }
 
     public static int size() {

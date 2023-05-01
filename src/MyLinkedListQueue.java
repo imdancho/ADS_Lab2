@@ -25,4 +25,26 @@ public class MyLinkedListQueue {
         }
         return element;
     }
+
+    public static Object peek() {
+        Object element = null;
+        try {
+            int size = queue.size();
+            if ((size)>0) {
+                element = queue.getFirst();
+            }
+
+        } catch (EmptyStackException e) {
+            System.out.println("Stack is empty!");
+        }
+        return element;
+    }
+
+    public static Boolean isEmpty() {
+        return queue.isEmpty();
+    }
+
+    public static int size() {
+        return queue.size();
+    }
 }

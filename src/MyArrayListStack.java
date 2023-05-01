@@ -39,9 +39,7 @@ public class MyArrayListStack {
     }
 
     public static Boolean isEmpty() {
-        int size = stack.size();
-        if (size==0) return true;
-        else return false;
+        return stack.isEmpty();
     }
 
     public static int size() {

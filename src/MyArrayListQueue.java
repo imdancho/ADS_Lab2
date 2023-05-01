@@ -41,9 +41,8 @@ public class MyArrayListQueue {
     }
 
     public static Boolean isEmpty() {
-        int size = queue.size();
-        if (size==0) return true;
-        else return false;
+        return queue.isEmpty();
+
     }
 
     public static int size() {
