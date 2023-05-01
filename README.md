@@ -74,3 +74,82 @@ Solution:
         return stack.size();
     }
 ```
+
+
+# MyArrayListQueue, MyLinkedListQueue
+
+## _enqueue()_ function: 
+It adds an element to the back of the queue.
+
+Solution:
+
+```java
+    public static void enqueue(Object o) {
+        queue.addLast(o);
+    }
+```
+
+## _dequeue()_ function: 
+It removes and returns the front element of the queue.
+
+Solution:
+
+```java
+    public static Object dequeue () {
+        Object element = null;
+        try {
+            int size = queue.size();
+            if ((size)>0) {
+                element = queue.get(0);
+                queue.removeFirst();
+            }
+
+        } catch (EmptyStackException e) {
+            System.out.println("Queue is empty!");
+        }
+        return element;
+    }
+```
+
+## _peek()_ function: 
+It returns the front element of the queue without removing it.
+
+Solution:
+
+```java
+    public static Object peek() {
+        Object element = null;
+        try {
+            int size = queue.size();
+            if ((size)>0) {
+                element = queue.getFirst();
+            }
+
+        } catch (EmptyStackException e) {
+            System.out.println("Queue is empty!");
+        }
+        return element;
+    }
+```
+
+## _isEmpty()_ function: 
+It returns true if the queue is empty or false if it is not.
+
+Solution:
+
+```java
+    public static Boolean isEmpty() {
+        return queue.isEmpty();
+    }
+```
+
+## _size()_ function: 
+It returns the number of elements in the queue.
+
+Solution:
+
+```java
+    public static int size() {
+        return queue.size();
+    }
+```
