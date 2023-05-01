@@ -28,4 +28,7 @@ public class MyArrayListQueue {
         else return false;
     }
 
+    public static int sizee() {
+        return queue.size();
+    }
 }

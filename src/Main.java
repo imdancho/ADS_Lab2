@@ -16,7 +16,7 @@ public class Main {
 
         System.out.println(MyArrayListQueue.isEmpty());
 
-
+        System.out.println(MyArrayListQueue.sizee());
 
 
 
