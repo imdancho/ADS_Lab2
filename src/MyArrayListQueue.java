@@ -1,10 +1,10 @@
 import java.util.EmptyStackException;
-import java.util.ArrayList;
+import java.util.ArrayList; //importing the necessary classes
 
 public class MyArrayListQueue {
     static ArrayList<Object> queue = new ArrayList<Object>();
 
-    public MyArrayListQueue() {
+    public MyArrayListQueue() { //a constructor for the class
     }
 
     public static void enqueue(Object o) {
@@ -15,37 +15,36 @@ public class MyArrayListQueue {
         Object element = null;
         try {
             int size = queue.size();
-            if ((size)>0) {
-                element = queue.get(0);
-                queue.remove(0);
+            if ((size)>0) { //if its not empty
+                element = queue.get(0); //store
+                queue.remove(0); //remove element
             }
 
-        } catch (EmptyStackException e) {
+        } catch (EmptyStackException e) { //exception
             System.out.println("Queue is empty!");
         }
         return element;
     }
 
-    public static Object peek() {
+    public static Object peek() { //It returns the top element of the queue without removing it.
         Object element = null;
         try {
-            int size = queue.size();
-            if ((size)>0) {
-                element = queue.get(0);
+            int size = queue.size(); //check size
+            if ((size)>0) { //if its not empty
+                element = queue.get(0); //store
             }
 
-        } catch (EmptyStackException e) {
-            System.out.println("Queue is empty!");
+        } catch (EmptyStackException e) { //exception
+            System.out.println("Queue is empty!"); //message
         }
-        return element;
+        return element; //return that element
     }
 
-    public static Boolean isEmpty() {
-        return queue.isEmpty();
-
+    public static Boolean isEmpty() { //It returns true if the queue is empty or false if it is not.
+        return queue.isEmpty(); //check if its empty and returns it
     }
 
-    public static int size() {
-        return queue.size();
+    public static int size() { //It returns the number of elements in the queue.
+        return queue.size(); //returns size
     }
 }
